@@ -1,0 +1,19 @@
+{
+  "name": "expenses-chart-component-main",
+  "version": "1.0.0",
+  "description": "This is a expense chart component that monitors daily expenses by users",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danielwiser/express-chat-component.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Danielwiser/express-chat-component/issues"
+  },
+  "homepage": "https://github.com/Danielwiser/express-chat-component#readme"
+}
