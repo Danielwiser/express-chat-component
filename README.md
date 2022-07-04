@@ -1,1 +1,1 @@
-This is a expense chart component that monitors daily expenses by users
+This is an expense chart component that monitors daily expenses by users
