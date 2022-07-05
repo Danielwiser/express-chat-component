@@ -29,16 +29,27 @@ body{
 
 
 .firstsec{
-    width: 200%;
+    color: white;
+    width: 100%;
     background-color: rgb(236, 117, 93);
     margin-right: 20px 0;
     border-radius: 10px;
 }
+.firstsec span{
+    font-size: xx-large;
+}
 .secsec{
     background-color: rgb(255, 252, 247);
-    width: 200%;
+    width: 100%;
     border-radius: 10px;
-    height: 130%;
+    height: 90%;
+    color: black;
+}
+.minisecone{
+    font-size: 25px;
+    padding: 20px 50px;
+    /* border: 10px solid gold; */
+    /* margin: 20px 0; */
 }
 .minisectwo{
     display: flex;
@@ -47,10 +58,12 @@ body{
     border-radius: 10px;
 }
 .minisectwo .leftone{
-    padding-left: 50px 0;   
+    /* padding-left: 10px 0;   */
+    margin-left: 50px 0; 
 }
 .attribution{
     display: flex;
     align-items: flex-end;
     justify-content: center;
 }
+

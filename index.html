@@ -18,6 +18,9 @@
   </style>
 </head>
 <body>
+  
+  </head>
+  
 
   <div class="divone">
     <section class="firstsec">
@@ -28,15 +31,37 @@
     <section class="secsec">
       <section class="minisecone">
         <h1>Spending - Last 7 days</h1>
-        <li>
-            mon
-            tue
-            wed
-            thu
-            fri
-            sat
-            sun
-        </li>
+        <div id="barchart_material" style="width: 250%; height: 100%; margin: 100px auto;"></div>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+          google.charts.load('current', {'packages':['bar']});
+          google.charts.setOnLoadCallback(drawChart);
+    
+          function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+            ["Day", "Amount"],
+                ["Mon", 17.45],
+                ["Tue", 34.91],
+                ["Wed", 52.36],
+                ["Thu", 31.07],
+                ["Fri", 23.39],
+                ["Sat", 43.28],
+                ["Sun", 25.48],
+            ]);
+    
+            var options = {
+              // chart: {
+              //   title: 'Expenses for the last seven days',
+               
+              // },
+              bars: 'vertical' // Required for Material Bar Charts.
+            };
+    
+            var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+    
+            chart.draw(data, google.charts.Bar.convertOptions(options));
+          }
+        </script>
       </section>
       <section class="minisectwo">
         <div class="leftone">
@@ -58,4 +83,5 @@
     Coded by <a href="#">Daniel Buernor</a>.
   </div>
 </body>
+
 </html>
